@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/slick.js"],"names":["$","slick","infinite","slidesToShow","slidesToScroll"],"mappings":";AAAAA,EAAE,mBAAmBC,MAAM,CAEzBC,UAAU,EACVC,aAAc,EACdC,eAAgB","file":"slick.d0e8250b.js","sourceRoot":"../src","sourcesContent":["$('.multiple-items').slick({\n \n  infinite: true,\n  slidesToShow: 1,\n  slidesToScroll: 1,\n});\n"]}
