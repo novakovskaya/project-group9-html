@@ -1,0 +1,161 @@
+// MOBILE
+.hero {
+  background-image: url('../images/hero/bg-mobile.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: var(--primary-dark-color);
+
+  margin-bottom: 8px;
+}
+
+.hero__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+  color: #111518;
+
+  &_grey {
+    display: block;
+    font-weight: 500;
+    color: var(--primary-grey-color);
+  }
+
+  @media screen and (max-width: 1365px) {
+    &_accent {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.hero__link {
+  display: flex;
+  justify-content: center;
+  max-width: 260px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 52px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+}
+
+.hero__container_img {
+  position: relative;
+}
+
+.hero__image-top {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.hero__image-lower {
+  position: absolute;
+  left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__link {
+    margin: 52px auto 55px;
+  }
+
+  .hero__container_img {
+    width: 208px;
+    height: 178px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__image-top {
+    left: 20px;
+  }
+
+  .hero__image-lower {
+    top: 10px;
+  }
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 65px;
+    padding-bottom: 83px;
+
+    background-image: url('../images/hero/bg-tablet.png');
+  }
+
+  .hero__title {
+    font-size: 26px;
+  }
+
+  .hero-container {
+    display: flex;
+  }
+
+  .hero__container_img {
+    min-width: 375px;
+    min-height: 320px;
+  }
+
+  .hero__image-top {
+    left: 36px;
+  }
+
+  .hero__image-lower {
+    top: 17px;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1366px) {
+  .hero {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    background-image: url('../images/hero/bg-desktop.png');
+  }
+
+  .hero__title {
+    font-size: 58px;
+  }
+
+  .hero__link {
+    max-width: 354px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 14px;
+  }
+
+  .hero__text {
+    font-size: 20px;
+  }
+
+  .hero__container_img {
+    min-width: 841px;
+    min-height: 718px;
+  }
+
+  .hero__image-top {
+    left: 81px;
+  }
+
+  .hero__image-lower {
+    top: 38px;
+  }
+}
