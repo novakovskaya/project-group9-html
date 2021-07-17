@@ -1,0 +1,40 @@
+<section class="section contacts" id="contacts">
+  <div class="container">
+    <h2 class="section-title contacts__title">
+      Registration for a <span class="contacts__title-accent">free</span> phone
+      <span class="contacts__title-accent">consultation</span> on the nuances of English UPE
+    </h2>
+    <form action="#" class="contacts-form">
+      <p class="contacts-form__head">
+        Leave a request for participation in a
+        <span class="contacts-form__head-accent">free lesson</span>.
+        <p class="contacts-form__head contacts-form__text">A consultant will contact you
+        and answer your questions</p>
+      </p>
+      <div class="contacts__list">
+        <label class="contacts__field"
+          ><input
+            type="text"
+            name="user-name"
+            class="contacts__input"
+            placeholder="Name*"
+            pattern="[A-Za-z]{1,10}"
+            minlength="2"
+            required
+          />
+        </label>
+        <label class="contacts__field"
+          ><input
+            type="tel" name="user-phone" 
+            class="contacts__input"
+            placeholder="Phone*"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="096-111-11-11"
+            required
+          />
+        </label>
+      </div>
+      <button type="submit" class="contacts__btn">i want a free lesson</button>
+    </form>
+  </div>
+</section>
